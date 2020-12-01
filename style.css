@@ -1,0 +1,36 @@
+nav {
+    background-color: rgba(45, 45, 45, 0.1);
+    height: 50px;
+    opacity: 0.5;
+}
+
+ul {
+    float: right;
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+    padding: 5px;
+    margin-right: 20px;
+    margin-top: -4px;
+}
+
+main {
+    background-color: lightgray;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+
+footer {
+    background-color: lemonchiffon;
+    height: 50px;
+    width: 100%;
+}
+
+main {
+    background-image: url('pic1.jpg');
+    background-size: cover;
+}
