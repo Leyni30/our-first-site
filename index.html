@@ -19,7 +19,7 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Me</a>
+                    <a class="openModal" data-toggle="modal" href="#modal">About Me</a>
                 </li>
                 <li>
                     <a href="#">Contact Me</a>
@@ -28,8 +28,27 @@
         </nav>
     </header>
     <main>
-        <img src="monkey.png" alt="monkey">
+
     </main>
+    <!-- <figure class="me">
+        <img src="crocodile.png" class="me" alt="me">
+        <figcaption></figcaption>
+    </figure> -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">About Me</div>
+            <!-- <img src="monkey.png" alt="monkey"> -->
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, voluptatem inventore unde qui reiciendis temporibus
+                odit reprehenderit cum iusto a! In excepturi cupiditate quia autem recusandae vitae totam illo maxime! Laudantium
+                ipsum fugit nisi facilis consequatur incidunt. Aspernatur error nobis molestias eum animi voluptatem pariatur
+                voluptates asperiores consectetur, repellendus vero dolore mollitia corporis quaerat similique necessitatibus,
+                ipsa architecto! Quibusdam quia porro culpa, beatae aliquid quod repellat laudantium nisi laborum. Expedita!</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
     <footer>
         <h6>Copyright @2020</h6>
         <h6>Made with &#128156 by Elena Doncheva</h6>

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-image: url("jungle1.jpg");
     background-size: cover;
@@ -36,6 +40,79 @@ main {
     height: 700px;
     margin: auto;
     opacity: 0.4;
+    /* position: relative; */
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+.me {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translateX(-50%);
+    transform: translateY(-30%);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
 }
 
 footer {
@@ -58,8 +135,3 @@ h6:nth-child(2) {
     padding-left: 5px;
     font-size: 12px;
 }
-
-/* main {
-    background-image: url('pic1.jpg');
-    background-size: cover;
-} */
